@@ -1,0 +1,177 @@
+@media (min-width: 1025px) {
+    body {
+        background-color: hsla(172.8, 88.8%, 38.4%, 0.3);
+    }
+}
+
+/* body {
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
+/* .login {
+    width: 350px;
+    margin: 50px auto;
+    padding: 30px px 50px;
+    color: rgb(7, 7, 7);
+    text-align: center;
+    background-color: #06a38e;
+    border-radius: 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    height: 260px;
+} */
+
+/* input {
+
+    width: 200px;
+} */
+
+/* .btn {
+    cursor: pointer;
+    background-color: #1CBB63;
+    border: none;
+    width: 72px;
+    height: 32px;
+    color: white;
+}
+
+.btn:hover {
+    background-color: #079647;
+} */
+
+h2 {
+    color: hsl(241, 81%, 54%);
+    padding: 6px;
+    /* margin-top: 70px; */
+}
+
+/* h3 {
+    padding: 12px;
+} */
+
+a {
+    color: green;
+    text-decoration: none;
+}
+
+/* a:hover {
+    color: greenyellow;
+} */
+
+/* input {
+    border-radius: 3px;
+} */
+
+.popup_container
+{
+    margin: auto;
+    display: block;
+    width: 75%;
+    height: auto;
+    padding: 30px;
+    /* visibility: hidden; */
+    z-index: 1;
+}
+
+.login, .signup
+{
+    /* visibility: hidden; */
+    display: flex;
+    position: absolute;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 75%;
+    height: auto;
+    padding: 10px 0px;
+    z-index: 1;
+    box-shadow: 0px 4px 10px 4px rgba(19,35,47,0.3);
+    border-radius: 10px;
+}
+
+/* .login.active, .signup.active
+{
+    visibility: visible;
+} */
+
+.login::before, .signup::before
+{
+    content: "";
+    background-image: url('../Res/background1.png');
+    position: absolute;
+    top: 0;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.6;
+    z-index: 1;
+}
+
+/* a.not_user, a.user
+{
+    cursor: pointer;
+} */
+
+.img_login, .img_signup
+{
+    z-index: 2;
+    height: 45%;
+    width: 45%;
+}
+
+.form_container
+{
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px 4px rgba(19,35,47,0.3);
+    background-color: white;
+    height: 50%;
+    z-index: 2;
+}
+
+#country_code, .form_input
+{
+    padding: 2px 5px;
+    border-radius: 10px;
+    border: 2px solid rgba(220, 220, 220, 0.8);
+}
+
+.form_input
+{
+    padding: 3px 10px;
+}
+
+.title
+{
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.req::before
+{
+    content: "* ";
+    color: red;
+}
+
+.btn_login, .btn_signup
+{
+    padding: 5px 15px;
+    border-radius: 10px;
+    border: 0.5px solid green;
+    background-color: green;
+    color: white;
+    /* font-weight: bold; */
+    font-size: 15px;
+}
+
+.close
+{
+    position: absolute;
+    padding: 5px;
+    cursor: pointer;
+    z-index: 2;
+    /* margin: 0; */
+    top: 2%;
+    right: 2%;
+}

@@ -1,0 +1,535 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Space+Grotesk:wght@500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Titan+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #E3EBEA;
+    font-size: 3rem;
+}
+
+html {
+    font-size: 62.5%;
+    /* 1rem = 10px */
+}
+
+.header {
+    height: 10rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #d8f7f7;
+    /* background: transparent; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+
+.header .logo {
+    height: 15rem;
+}
+
+.navbar_list {
+    display: flex;
+    gap: 5rem;
+    list-style: none;
+    z-index: 2;
+    /* font-size: 2.5rem; */
+}
+
+.navbar_list .fa {
+    padding: 1rem;
+}
+
+.navbar_link:link,
+.navbar_link:visited {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 500;
+    color: rgb(13, 1, 170);
+    transition: all 0.5ms;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.navbar_link:hover,
+.navbar_link:active {
+    color: rgb(44, 40, 97);
+}
+
+.right {
+    display: flex;
+}
+
+.mid {
+    display: flex;
+    align-items: center;
+}
+
+.p {
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Caveat Brush', cursive;
+}
+
+.p2 {
+    font-size: 1rem;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.divlist {
+    display: flex;
+    gap: 5rem;
+    list-style: none;
+}
+
+.right_link:link,
+.right_link:visited {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 500;
+    color: rgb(13, 1, 170);
+}
+
+.right_link:hover,
+.right_link:active {
+    color: rgb(44, 40, 97);
+}
+
+.mobile_navbar_btn .fa {
+    font-size: 4rem;
+    color: rgb(13, 1, 170);
+}
+
+.mobile_navbar_btn {
+    display: none;
+    cursor: pointer;
+}
+
+.fa-times {
+    display: none;
+}
+
+.fa-search
+{
+    background-color: #d8f7f7;
+    color: rgb(13, 1, 170);
+    font-size: 1rem;
+}
+
+.searchbar {
+    width: 20rem;
+    height: 3rem;
+    border: 0.4rem solid rgb(128 212 237 / 64%);
+    border-radius: 1rem;
+}
+
+.submit {
+    cursor: pointer;
+    background-color: #d8f7f7 ;
+    border: 0px;
+}
+
+.submit .fa {
+    color: rgb(13, 1, 170);
+    font-weight: bold;
+}
+
+.section_item {
+    align-items: center;
+}
+
+.dropdown_list {
+    display: none;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 10px;
+    list-style: none;
+    border: 1px solid rgb(194, 194, 194);
+}
+
+.dropdown_list ul {
+    list-style-type: none;
+}
+
+.navbar ul li:hover .dropdown_list {
+    display: block;
+    position: absolute;
+    top: 7rem;
+    align-items: center;
+    list-style: none;
+}
+
+.navbar ul li:hover .dropdown_list ul {
+    display: block;
+    background: white;
+}
+
+.navbar ul li:hover .dropdown_list ul li {
+    text-align: left;
+    padding: 12px 16px;
+    border-bottom: 1px solid #ddd;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Space Grotesk', sans-serif;
+    color: rgb(255, 217, 0);
+}
+
+.navbar_active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.dropdown_list a {
+    text-decoration: none;
+}
+
+.dropdown_list li:last-child {
+    border-bottom: none;
+}
+
+.dropdown_list li:hover {
+    background-color: #f1f1f1;
+}
+
+.main_section {
+    background-image: url(../Res/animals-1782013_1280.png);
+    display: flex;
+    position: relative;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 80rem;
+}
+
+.section_item {
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: relative;
+    /* top: -9rem; */
+    left: 8rem;
+    bottom: 10rem;
+    width: 28rem;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    z-index: -1;
+}
+
+.intro {
+    font-size: 2rem;
+    position: relative;
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translate(-50%);
+}
+
+.intro h1 {
+    font-family: 'Caveat Brush', cursive;
+    font-size: 4rem;
+}
+
+.intro_start {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    width: 100rem;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 2.4rem;
+    font-family: 'Pacifico', cursive;
+    font-weight: bold;
+    height: 30rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    /* top: 5rem; */
+    border-radius: 2rem;
+    margin-top: 5rem;
+}
+
+.sart_video {
+    /* position: absolute; */
+    width: 100rem;
+    height: 30rem;
+    border-right: none;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    /* z-index: -1; */
+}
+
+.intro_start p {
+    padding: 3rem 3rem;
+    color: #444458;
+}
+
+.desc {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    position: relative;
+    /* justify-content: space-evenly; */
+    width: 100%;
+    /* top: 15rem; */
+    font-size: 2.4rem;
+    font-weight: bold;
+    text-align: left;
+    margin-top: 5rem;
+}
+
+.petcare,
+.petgrooming,
+.petconsult {
+    position: relative;
+    color: rgb(229 228 228);
+    width: 90rem;
+    height: 14rem;
+    display: flex;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+}
+
+.petcare {
+    background-image: linear-gradient(to right, #83480b, #8c5621, #956434, #9e7347, #a6815b);
+    left: 0;
+    width: 90rem;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+}
+
+.petgrooming {
+    background-image: linear-gradient(to right, #07937a, #19a087, #26ae94, #31bba2, #3cc9b0);
+    right: 0;
+    padding-right: 0;
+    width: 90rem;
+    left: 44rem;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+}
+
+.petconsult {
+    background-image: linear-gradient(to right, #1e4b72, #2b5880, #38668f, #44749d, #5182ac);
+    left: 0;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+}
+
+.desc p {
+    padding: 1rem 2rem;
+    /* font-family: 'Gloria Hallelujah', cursive; */
+    font-family: 'Cabin', sans-serif;
+    font-size: 2rem;
+}
+
+/* .works {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 22rem;
+    gap: 10rem;
+}
+
+
+
+.works {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 10rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    justify-content: space-around;
+    background: transparent;
+} */
+.howwork {
+    position: relative;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.workslist {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    justify-content: space-around;
+    background: transparent;
+    margin-top: 5rem;
+}
+
+.workitems img {
+    width: 3rem;
+    height: 3rem;
+}
+
+.work_p2 {
+    font-size: 1.7rem;
+}
+
+.work_p1 {
+    font-weight: bold;
+    font-size: 2.7rem;
+}
+
+footer {
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    height: 11rem;
+    background-color: #243544;
+    color: white;
+    justify-content: space-between;
+    overflow: hidden;
+    margin-top: 5rem;
+}
+
+.left_foot {
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1rem;
+    margin-left: 2rem;
+}
+
+.home_footer {
+    display: flex;
+    flex-direction: row;
+}
+
+.mid_foot {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.mid_foot a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+
+.mid_foot a:hover {
+    transform: scale(1.4);
+}
+
+/* .mid_foot p{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 1rem;
+} */
+
+.right_foot {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 2rem;
+    justify-content: center;
+    align-items: flex-start;
+    margin-right: 2rem;
+}
+
+.right_foot2 {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.right_foot img {
+    width: 2rem;
+    height: 2rem;
+    gap: 1rem;
+}
+
+.right_foot img:hover {
+    transform: scale(1.5);
+    animation: shake 0.5s;
+}
+
+.right_foot a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.6rem;
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}

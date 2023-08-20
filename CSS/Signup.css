@@ -1,0 +1,91 @@
+body {
+    background-image: url(31ab1f3a734524db49f96bc5b09278b1-removebg-preview.png);
+}
+
+/* Media query for desktop screens */
+@media only screen and (min-width: 1024px) {
+    body {
+        background-image: url(31ab1f3a734524db49f96bc5b09278b1-removebg-preview.png);
+        background-color: hsl(147, 10%, 56%);
+    }
+}
+
+.container {
+    display: flex;
+    height: 430px;
+    margin-top: 55px;
+    margin-left: 250px;
+}
+
+.left {
+    border: none;
+}
+
+.left img {
+    width: 500px;
+    height: 430px;
+}
+
+.btn1 {
+    background-color: hsl(248, 32%, 49%);
+    height: 40px;
+    width: 400px;
+    color: hsl(246, 25%, 77%);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 8px hsla(240, 2%, 10%, 0.3);
+    font-size: 20px;
+}
+
+.bottom {
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    margin-top: 20px;
+    height: 370px;
+    box-shadow: 0px 6px hsla(240, 2%, 10%, 0.3);
+}
+
+
+.right {
+    display: flexbox;
+    width: 400px;
+    height: 430px;
+    text-align: center;
+}
+
+input {
+    width: 300px;
+    height: 40px;
+    margin-top: 20px;
+}
+
+.btn2 {
+    width: 308px;
+    height: 45px;
+    background-color: hsl(154, 59%, 51%);
+    color: hsl(240, 100%, 99%);
+    border: none;
+    border-radius: 5px;
+}
+
+.btn2:hover {
+    cursor: pointer;
+    background-color: hsl(154, 91%, 27%);
+}
+
+.btn1:hover {
+    cursor: pointer;
+    background-color: hsl(248, 62%, 39%);
+}
+
+a:hover {
+    cursor: pointer;
+    color: hsl(0, 100%, 50%);
+}
+
+a {
+    text-decoration: none;
+    color: hsl(0, 96%, 38%);
+}

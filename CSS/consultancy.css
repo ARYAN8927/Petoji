@@ -1,0 +1,56 @@
+h1 {
+    position: relative;
+    /* top: 3rem; */
+    text-align: center;
+    font-size: 4rem;
+    margin-top: 5rem;
+}
+
+.popup_consultancy {
+    background-color: white;
+    width: 100rem;
+    height: 50rem;
+    font-size: 2rem;
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%, -50%);
+    z-index: 9;
+    transition: 0.5s ease-in-out;
+    display: flex;
+    flex-direction: row;
+    border-radius: 2rem;
+    visibility: hidden;
+}
+
+.popup_consultancy.active {
+    visibility: visible;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.popup_consultancy span {
+    position: absolute;
+    right: 0;
+    top: 0;
+    border: 1px solid black;
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 2rem;
+}
+
+.popup_consultancy input {
+    width: 70%;
+    height: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+input.date, input.duration
+{
+    height: 50px;
+}
