@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petoji | Home</title>
+    <link rel="stylesheet" href="./css/Home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="./css/Home.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="mobile_navbar_btn">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+            <i class="fa fa-times" aria-hidden="true"></i>
+        </div>
+        <!-- <img src="Res/White_and_Blue_Pet_House_Logo_Design-removebg-preview.png" alt="logo" class="logo"> -->
+        <nav class="navbar">
+            <ul class="navbar_list" id="navbar">
+                <li><a class="navbar_link" href="Petoji.html"><i class="fa fa-home" aria-hidden="true"></i>
+                        Home</a></li>
+                <li><a class="navbar_link" href="./ext/shopping.php" target="_blank"><i class="fa fa-shopping-bag"
+                            aria-hidden="true"></i>
+                        Shopping</a></li>
+                <li><a id="services" class="navbar_link" href="#"><i class="fa fa-cogs"
+                            aria-hidden="true"></i>
+                        Services<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                    <div class="dropdown_list">
+                        <ul>
+                            <li class="dropdown_items"><a href="./ext/grooming.html">Grooming Services</a></li>
+                            <li class="dropdown_items"><a href="./ext/petwalk.html">Pet-walk Services</a></li>
+                            <li class="dropdown_items"><a href="./ext/consultancy.html">Consultancy Services</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div class="mid">
+            <a href="Home.html" class="img_link"><img
+                    src="Res/White_and_Blue_Pet_House_Logo_Design-removebg-preview.png" alt="logo" class="logo"></a>
+            <div class="p">
+                <p class="p1">Petoji</p>
+                <p class="p2">for your lovable ones</p>
+            </div>
+        </div>
+
+        <form action="backend.php" method="post">
+            <input type="search" name="searchbar" class="searchbar" placeholder=" search">
+            <button type="submit" class="submit"><i class="fa fa-search" aria-hidden="true"></i>
+            </button>
+        </form>
+        <div class="right">
+            <ul class="divlist">
+                <li><a href="#" class="right_link"><i class="fa fa-bell" aria-hidden="true"></i>
+                    </a></li>
+                <li><a class="right_link" href="./ext/cart.php" target="_blank"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                </li>
+                <li><a class="right_link" href="./ext/login.php" target="_blank"><i class="fa fa-user-circle" aria-hidden="true"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <section class="main_section">
+            <div class="section_item">
+                <p>"Pets may be a part of our lives, but we are their whole life"</p>
+                <!-- <pre>Don't you have enough time to walk around your pet?</pre>
+                <a class="book" href="service.html"><button class="book_btn">Book a Pet-Walker Now!</button></a> -->
+            </div>
+        </section>
+    </main>
+    <section>
+        <div class="intro">
+            <h1>Petoji</h1>
+            <h4>for your lovable ones</h4>
+        </div>
+    </section>
+    <div class="intro_start">
+        <video autoplay loop muted plays-inline class="sart_video">
+            <source src="Res/dog-149711.mp4" type="video/mp4">
+        </video>
+        <p>Welcome to our one-stop-shop for all your pet care needs! Our company provides comprehensive pet care
+            services that include pet grooming and pet care consultancy, so you can give your furry friend the best
+            possible care.</p>
+    </div>
+    <section class="desc">
+        <div class="petcare">
+            <p>Our pet care services are designed to keep your pets healthy, happy, and comfortable. We offer
+                personalized
+                care plans that take into account your pet's unique needs and preferences, with a range of services that
+                include feeding, walking, and playing.</p>
+        </div>
+        <div class="petgrooming">
+            <p>Our pet grooming services are designed to help your pets look and feel their best. Our experienced
+                groomers
+                use gentle and effective techniques to keep your pets' coats shiny, clean, and free from tangles and
+                mats.
+                We also offer specialized grooming services like nail trimming, ear cleaning, and teeth brushing.</p>
+        </div>
+        <div class="petconsult">
+            <p>Our pet care consultancy services provide you with expert advice and guidance on all aspects of pet care,
+                including nutrition, exercise, medical care, and behavior. Our experienced consultants will work with
+                you to
+                develop a personalized plan that meets your pet's needs and helps you make informed decisions about
+                their
+                care.</p>
+        </div>
+    </section>
+    <section class="howwork">
+        <h3>How Petoji Works</h3>
+    </section>
+    <div class="workslist">
+        <div class="workitems">
+            <img src="Res/loupe.png" alt="search">
+            <p class="work_p1">Search</p>
+            <p class="work_p2">Search pet care heroes by location and service.</p>
+        </div>
+        <div class="workitems">
+            <img src="Res/booking.png" alt="booking">
+            <p class="work_p1">Book</p>
+            <p class="work_p2">Schedule your appointment at home.</p>
+        </div>
+        <div class="workitems">
+            <img src="Res/relax.png" alt="relax">
+            <p class="work_p1">Relax</p>
+            <p class="work_p2">Sit back and relax! Your pet hero is on his way.</p>
+        </div>
+    </div>
+    <footer class="home_footer">
+        <div class="left_foot">
+            <p>Petoji Pet Pare, Grooming & Consultancy Service LTD. © 2019-2023, All Rights Reserved</p>
+            <p><i class="fa fa-map-marker" aria-hidden="true"></i>
+                1, Vidyasagar Street, kol-700 009</p>
+        </div>
+        <div class="mid_foot">
+            <!-- <p>Company</p> -->
+            <a href="#">Blog</a>
+            <a href="#">Careers</a>
+            <a href="#">About us</a>
+            <a href="#">Help-Center</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Privacy Policy</a>
+        </div>
+        <div class="right_foot">
+            <h5>Contact Us</h5>
+            <div class="right_foot1">
+                <a href="https://mail.google.com/" target="_blank"><img src="Res/gmail.png"
+                        alt="gmail">Talk to Us</a>
+            </div>
+            <h5>Connect to us</h5>
+            <div class="right_foot2">
+                <a href="https://www.facebook.com/" target="_blank" id="a1"><img
+                        src="Res/facebook.png" alt="facebook"></a>
+                <a href="https://instagram.com/" target="_blank"><img
+                        src="Res/instagram.png" alt="instagram"></i></a>
+                <a href="https://www.linkedin.com/" target="_blank"><img
+                        src="Res/linkedin.png" alt="linkedin"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
