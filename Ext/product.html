@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petogi | Product</title>
+    <link rel="stylesheet" href="../css/product.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="mobile_navbar_btn">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+            <i class="fa fa-times" aria-hidden="true"></i>
+        </div>
+        <!-- <img src="Res/White_and_Blue_Pet_House_Logo_Design-removebg-preview.png" alt="logo" class="logo"> -->
+        <div class="mid">
+            <a href="../Home.html" class="img_link"><img
+                    src="../Res/White_and_Blue_Pet_House_Logo_Design-removebg-preview.png" alt="logo" class="logo"></a>
+            <div class="p">
+                <p class="p1">Petoji</p>
+                <p class="p2">for your lovable ones</p>
+            </div>
+        </div>
+
+        <form action="backend.php" method="post">
+            <input type="search" name="searchbar" class="searchbar" placeholder=" search">
+            <button type="submit" class="submit"><i class="fa fa-search" aria-hidden="true"></i>
+            </button>
+        </form>
+        <nav class="navbar">
+            <ul class="navbar_list" id="navbar">
+                <!-- <li><a class="navbar_link" href="../Home.html"><i class="fa nav_icon fa-home" aria-hidden="true"></i>
+                        Home</a></li>
+                <li><a class="navbar_link" href="./Shopping.html" target="_blank"><i class="fa nav_icon fa-shopping-bag"
+                            aria-hidden="true"></i>
+                        Shopping</a></li> -->
+                <li><a id="services" class="navbar_link" href="#"><i class="fa fa-user-circle" aria-hidden="true"></i>
+                        User<i class="fa nav_icon fa-angle-down" aria-hidden="true"></i></a>
+                    <div class="dropdown_list">
+                        <ul>
+                            <li class="dropdown_items"><a href="./grooming.html">Profile</a></li>
+                            <li class="dropdown_items"><a href="./petwalk.html">Orders</a></li>
+                            <li class="dropdown_items"><a href="./consultancy.html">Sign Out</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a class="right_link" href="./cart.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <br><br><br>
+    <div class="main_container">
+        <div class="product_img">
+            <img src="../Res/image.png" class="prod_img">
+            <div class="buttons">
+                <div class="addtocart">Add To Cart</div>
+                <div class="buy_now">Buy Now</div>
+            </div>
+        </div>
+        <div class="product_details">
+            <div class="title">Product Name</div>
+            <div class="price">₹ XXX <span class="space"></span><span class="strike-through">₹ XXX</span></div>
+            <div class="rating">Ratings : <span class="space"></span>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+            </div><br><br><br><br>
+            <div class="delivery">Expected Delivery in Days</div>
+            <div class="seller">Seller : Seller Name</div><br><br>
+            <div class="details">Product Details : </div><br><br><br><br>
+            <div class="review">Customer Reviews : </div><br><br><br><br>
+        </div>
+    </div>
+</body>
+
+</html>

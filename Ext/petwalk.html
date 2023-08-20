@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petogi | Petwalking</title>
+    <link rel="stylesheet" href="../css/petwalk.css">
+    <link rel="stylesheet" href="../css/Home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link type="image/png" sizes="96x96" rel="icon" href="../Res/icons8-kolkata-96.png"> -->
+</head>
+
+<body>
+    <header class="header">
+        <div class="mobile_navbar_btn">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+            <i class="fa fa-times" aria-hidden="true"></i>
+        </div>
+        <!-- <img src="Res/White_and_Blue_Pet_House_Logo_Design-removebg-preview.png" alt="logo" class="logo"> -->
+        <nav class="navbar">
+            <ul class="navbar_list" id="navbar">
+                <li><a class="navbar_link" href="../Home.html"><i class="fa fa-home" aria-hidden="true"></i>
+                        Home</a></li>
+                <li><a class="navbar_link" href="./Shopping.html" target="_blank"><i class="fa fa-shopping-bag"
+                            aria-hidden="true"></i>
+                        Shopping</a></li>
+                <li><a id="services" class="navbar_link" href="#"><i class="fa fa-cogs"
+                            aria-hidden="true"></i>
+                        Services<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                    <div class="dropdown_list">
+                        <ul>
+                            <li class="dropdown_items"><a href="./grooming.html">Grooming Services</a></li>
+                            <li class="dropdown_items"><a href="./petwalk.html">Pet-walk Services</a></li>
+                            <li class="dropdown_items"><a href="./consultancy.html">Consultancy Services</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div class="mid">
+            <a href="../Home.html" class="img_link"><img
+                    src="../Res/White_and_Blue_Pet_House_Logo_Design-removebg-preview.png" alt="logo" class="logo"></a>
+            <div class="p">
+                <p class="p1">Petoji</p>
+                <p class="p2">for your lovable ones</p>
+            </div>
+        </div>
+
+        <form action="backend.php" method="post">
+            <input type="search" name="searchbar" class="searchbar" placeholder=" search">
+            <button type="submit" class="submit"><i class="fa fa-search" aria-hidden="true"></i>
+            </button>
+        </form>
+        <div class="right">
+            <ul class="divlist">
+                <li><a href="./notification.html" class="right_link"><i class="fa fa-bell" aria-hidden="true"></i>
+                    </a></li>
+                <li><a class="right_link" href="./cart.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                </li>
+                <li><a class="right_link" href="./Login.html" target="_blank"><i class="fa fa-user-circle" aria-hidden="true"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <p class="select">Select a City</p>
+    <div class="select_city">
+        <div class="kolkata">
+            <img src="../Res/icons8-kolkata-100.png" alt="kolkata">
+            <p>Kolkata</p>
+        </div>
+        <div class="mumbai">
+            <img src="../Res/icons8-mumbai-100.png" alt="mumbai">
+            <p>Mumbai</p>
+        </div>
+        <div class="delhi">
+            <img src="../Res/icons8-new-delhi-100.png" alt="mumbai">
+            <p>Delhi</p>
+        </div>
+        <div class="chennai">
+            <img src="../Res/icons8-chennai-100.png" alt="mumbai">
+            <p>Chennai</p>
+        </div>
+    </div>
+    <div class="content">
+        <div class="left_content">
+            <p class="left_content_1">Why dog walking is necessary</p>
+            <p class="left_content_2">Walking your pet has numerous benefits for your canine friend such as stress
+                relief, improve digestive and urinary health, and staying fit overall!</p>
+        </div>
+        <div class="right_content">
+            <img src="../Res/5386.jpg" alt="petwalk">
+        </div>
+    </div>
+    <h2>Our Packages</h2>
+    <section class="packages">
+        <div class="package" id="package1">
+            <div class="package_items1">
+                <p id="p1">ONE TIME/DAY</p>
+                <p>₹199</p>
+            </div>
+            <div class="package_items2">
+                <p>Package includes : </p>
+            </div>
+            <div class="package_items3">
+                <div class="itemlist"><img src="../Res/check.png" alt="check"> 25 Mins Walk</div>
+                <div class="itemlist"><img src="../Res/check.png" alt="check"> Combing</div>
+                <div class="itemlist"><img src="../Res/check.png" alt="check"> Paws Cleaning</div>
+                <div class="itemlist"><img src="../Res/check.png" alt="check"> Live Walk Tracking</div>
+            </div>
+            <div class="book" onclick="showmodel()">Book Now</div>
+        </div>
+        <div class="package" id="package2">
+            <div class="package_items1">
+                <p id="p1">TWO TIME/DAY</p>
+                <p>₹299</p>
+            </div>
+            <div class="package_items2">
+                <p>Package includes : </p>
+            </div>
+            <div class="package_items3">
+                <div class="itemlist"><img src="../Res/check.png" alt="check"> 25 Mins Walk</div>
+                <div class="itemlist"><img src="../Res/check.png" alt="check"> Combing</div>
+                <div class="itemlist"><img src="../Res/check.png" alt="check"> Paws Cleaning</div>
+                <div class="itemlist"><img src="../Res/check.png" alt="check"> Live Walk Tracking</div>
+            </div>
+            <div class="book" onclick="showmodel()">Book Now</div>
+        </div>
+        <div class="package" id="package3">
+            <div class="package_items1">
+                <p id="p1">THREE TIME/DAY</p>
+                <p>₹399</p>
+            </div>
+            <div class="package_items2">
+                <p>Package includes : </p>
+            </div>
+            <div class="package_items3">
+                <div class="itemlist"><img src="../Res/check.png" alt="check">25 Mins Walk</div>
+                <div class="itemlist"><img src="../Res/check.png" alt="check">Combing</div>
+                <div class="itemlist"><img src="../Res/check.png" alt="check">Paws Cleaning</div>
+                <div class="itemlist"><img src="../Res/check.png" alt="check">Live Walk Tracking</div>
+            </div>
+            <div class="book" onclick="showmodel()">Book Now</div>
+        </div>
+    </section>
+    <div id="overlay" class="overlay" onclick="removemodel()"></div>
+    <div id="popup" class="popup">
+        <span class="cross" onclick="removemodel()">&times;</span>
+        <div class="popup_left">
+            <img src="../Res/woman-7031850_edited.jpg" class="popup_img" alt="form" height="100%" width="100%">
+            <!-- <video autoplay loop muted plays-inline class="back_video">
+                <source src="../Res/dog-141508.mp4" type="dogwalk/mp4">
+            </video> -->
+        </div>
+        <div class="popup_right">
+            <form action="" method="post">
+                <div class="popup_input">
+                    <label for="Name">Full Name</label>
+                    <input type="text" name="fullName" id="fullName" placeholder=" Enter your full name" required>
+                </div>
+                <div class="popup_input">
+                    <label for="address">Address</label>
+                    <input type="text" name="address" id="address" placeholder=" Enter your current address" required>
+                </div>
+                <div class="popup_input">
+                    <label for="plan">Which plan do you want?</label>
+                    <select name="pet" id="pet" required>
+                        <option value="">select a plan</option>
+                        <option value="bronze">Bronze</option>
+                        <option value="silver">Silver</option>
+                        <option value="gold">Gold</option>
+                    </select>
+                </div>
+                <div class="popup_input" id="pet_choose">
+                    <label>
+                        <input type="radio" name="image-selection" class="image-selection" value="option-1" required>
+                        <img src="../Res/cat.png" alt="Option 1">
+                        Cat
+                    </label>
+                    <label>
+                        <input type="radio" name="image-selection" class="image-selection" value="option-2" required>
+                        <img src="../Res/shiba.png" alt="Option 2">
+                        Dog
+                    </label>
+                    <label>
+                        <input type="radio" name="image-selection" class="image-selection" value="option-3" required>
+                        <img src="../Res/other.png" alt="Option 3">
+                        Others
+                    </label>
+                </div>
+                <div class="popup_input">
+                    <label for="duration">Duration</label>
+                    <input type="time" name="duration" id="duration" class="duration" required>
+                </div>
+                <div class="popup_input">
+                    <label for="date">Select Date</label>
+                    <input type="datetime-local" name="date" id="date" class="date" required>
+                </div>
+                <button class="buy">BOOK SERVICE NOW!</button>
+            </form>
+        </div>
+    </div>
+</body>
+<script>
+    function showmodel() {
+        document.getElementById("overlay").classList.toggle("active");
+        document.getElementById("popup").classList.toggle("active");
+    }
+
+    function removemodel() {
+        document.getElementById("overlay").classList.toggle("active");
+        document.getElementById("popup").classList.toggle("active");
+    }
+</script>
+
+</html>
